@@ -1,6 +1,6 @@
 # Tetris Animation
 
-Created by Eli Blaney as a final project for CSC 414, taught by Dr. Brian Kokensparger.
+Created by Eli Blaney as a final project for CSC 414, "Introduction to Computer Architecture," taught by Dr. Brian Kokensparger.
 
 ## Basic Info
 
@@ -27,7 +27,7 @@ The game board itself is encoded as a series of two 32-bit integers, stored in t
 
 The animation is run by a series of ticks. A tick waits a certain period of time and then acts on all the data on the board in order to make blocks fall or any other game logic that needs to be performed. Unfortunately, certain actions like sleeping for a certain period of time or clearing the terminal screen are surprisingly difficult to implement in ARM Assembly, since the ARM architecture is designed to be platform-independent, and these are OS-specific features. Because of that, I used a small C file to greatly simplify these basic system tasks, but no game logic is actually written in C.
 
-## File Explanations
+## Code Explanations
 
 ### board.s
 
