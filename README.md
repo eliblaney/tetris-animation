@@ -67,7 +67,7 @@ Handles one tick of game time. It will animate blocks down.
 
 Returns: New board data stored in R8 and R9.
 
-R0 = temp var
-R1 = bit mask
-R8 = board data (top half of board)
-R9 = board data (bottom half of board)
+	R0 = temp var
+	R1 = bit mask
+	R8 = board data (top half of board)
+	R9 = board data (bottom half of board)
