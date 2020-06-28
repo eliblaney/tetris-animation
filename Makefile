@@ -6,11 +6,11 @@ OUTPUT=./tetris
 .PHONY: install
 
 install:
-	$(CC) -c util.c
-	$(AS) -o main.o main.s
-	$(AS) -o print.o print.s
-	$(AS) -o board.o board.s
-	$(AS) -o tick.o tick.s
+	$(CC) -c src/util.c
+	$(AS) -o main.o src/main.s
+	$(AS) -o print.o src/print.s
+	$(AS) -o board.o src/board.s
+	$(AS) -o tick.o src/tick.s
 
 	$(CC) -o $(OUTPUT) *.o -e $(ENTRYPOINT)
 
